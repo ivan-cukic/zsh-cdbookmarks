@@ -23,7 +23,9 @@ Mind that the bookmark names can not contain spaces!
 After that, you can type:
 
     cdb project
+
 or
+
     cdb project/some/subfolder/
 
 cdb_add
@@ -36,8 +38,13 @@ If you do not want to create the .zsh/cdbookmarks file manually, you can use the
 adds the current directory to the file under the specified name.
 
     cdb_add bookmark_name bookmark_location
-    
+
 adds the specified location.
+
+cdb_edit
+--------
+
+cdb_edit command opens the bookmarks file in your $EDITOR
 
 
 TODO: Rewrite the README file :)
