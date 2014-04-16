@@ -1,9 +1,7 @@
 zsh-cdbookmarks
 ===============
 
-ZSH cd bookmarks
-
-ZSH bookmarking system for directory changing.
+ZSH bookmarking system for changing the current directory.
 
 Installation
 ------------
