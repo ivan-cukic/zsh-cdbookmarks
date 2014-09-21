@@ -11,7 +11,7 @@ Just source it via your .zshrc
 Usage
 -----
 
-You need to create a .zsh/cdbookmarks file to contain the mappings between bookmark names and folders. Something like:
+You need to create a .zsh/cdbookmarks.conf file to contain the mappings between bookmark names and folders. Something like:
 
 project   /home/user/project/private/project
 pictures  /home/user/document/photos/blah/blah/blah
@@ -29,7 +29,7 @@ or
 cdb_add
 -------
 
-If you do not want to create the .zsh/cdbookmarks file manually, you can use the cdb_add command.
+If you do not want to create the .zsh/cdbookmarks.conf file manually, you can use the cdb_add command.
 
     cdb_add bookmark_name
 

@@ -4,7 +4,7 @@
 # (C) by Ivan Cukic, 2010-present
 # (C) by Stan Angeloff, 2010-present
 
-ZSH_BOOKMARKS="$HOME/.zsh/cdbookmarks"
+ZSH_BOOKMARKS="$HOME/.zsh/cdbookmarks.conf"
 
 zmodload zsh/pcre
 setopt REMATCH_PCRE
