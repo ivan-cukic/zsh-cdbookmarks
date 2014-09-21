@@ -1,5 +1,4 @@
 # Module: Change directory with bookmarks
-# Path: bin/zsh-modules-available/cdbookmarks
 # Priority: 90
 #
 # (C) by Ivan Cukic, 2010-present
@@ -56,8 +55,16 @@ function _cdb() {
         reply=(`find "$expanded_path"/"$body" -name "$tail*" -maxdepth 1 -mindepth 1 -type d -printf '%P\n' 2> /dev/null | sed 's#^.*$#'$head'/'$body'\0/#'`)
 
     else
-        reply=(`cat "$ZSH_BOOKMARKS" | sed -e 's#^\(.*\)\s.*$#\1/#g'`)
+        reply=(`sed -e 's#^\(.*\)\s.*$#\1/#g' "$ZSH_BOOKMARKS" `)
 
+    fi
+}
+
+function cdb_add() {
+    if [[ "$2" == "" ]]; then
+        echo "$1 $PWD" >> $ZSH_BOOKMARKS
+    else
+        echo "$1 $2" >> $ZSH_BOOKMARKS
     fi
 }
 
